@@ -1,0 +1,104 @@
+.bikeMenuBtn {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.bikeMenuBtn svg {
+	rotate: 90deg;
+	width: 20px;
+	height: 11px;
+}
+.bikeMenuContainer {
+	position: absolute;
+	display: flex;
+	top: 57px;
+	/* -60px for header padding */
+	left: -60px;
+	right: -60px;
+	min-height: 300px;
+	background-color: #fff;
+	color: #1d1d1d;
+	padding: 10px;
+	gap: 10px;
+}
+.bikeMenuContainer li {
+	flex: 1;
+	overflow: hidden;
+	border-radius: 4px;
+}
+.firstItem {
+	padding: 30px 60px 30px 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.firstInfo {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+	gap: 18px;
+}
+.firstInfo small {
+	letter-spacing: 0.1px;
+	font-size: 13px;
+}
+.firstInfo .threeModels {
+	line-height: 1.25;
+	font-size: 28px;
+	letter-spacing: -0.3px;
+	max-width: 360px;
+}
+.bookTest {
+	width: 100%;
+	text-align: start;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.itemBike {
+	padding: 30px;
+	height: 100%;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.itemBike .info {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+.itemBike small {
+	letter-spacing: 0.1px;
+	font-size: 13px;
+	opacity: 0.7;
+}
+.itemBike p {
+	line-height: 1.25;
+	font-size: 28px;
+	letter-spacing: -0.3px;
+}
+.imgContainer {
+	position: absolute;
+	top: 125px;
+	left: 0;
+	transform: translate(-5.8vw);
+	width: calc(100% + 60px);
+	overflow: hidden;
+}
+.imgContainer img {
+	height: auto;
+	width: 100%;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+	.bikeMenuContainer {
+		left: -20px;
+		right: -20px;
+	}
+}

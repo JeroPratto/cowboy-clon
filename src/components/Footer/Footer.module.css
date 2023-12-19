@@ -1,0 +1,51 @@
+.container {
+	background-color: #1d1d1d;
+	color: #fff;
+	width: 100%;
+	padding-top: 60px;
+}
+.listsContainer {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 20px;
+	padding: 0 60px;
+	padding-bottom: 60px;
+}
+.title {
+	font-size: 18px;
+	color: #999;
+	margin-bottom: 1em;
+}
+.item {
+	padding: 3px 0;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.logoContainer {
+	width: 100%;
+	padding: 0 60px 60px 60px;
+}
+.logoContainer svg {
+	width: 230px;
+	height: 35px;
+}
+
+@media screen and (max-width: 1400px) {
+	.listsContainer {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.listsContainer {
+		padding: 0 20px 60px 20px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.list {
+		margin-bottom: 20px;
+	}
+	.logoContainer {
+		padding: 0 20px 60px 20px;
+	}
+}
