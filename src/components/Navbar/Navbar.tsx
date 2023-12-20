@@ -30,11 +30,11 @@ const Navbar: React.FC<NavbarProps> = () => {
 
 	const handleChangeScroll = (latest: number) => {
 		const prev = scrollY.getPrevious()
-		if (latest > prev && latest > 150) {
+		if (latest > prev && latest > 50) {
 			setHidden(true)
 		} else {
 			setHidden(false)
-			setAtTop(latest <= 200)
+			setAtTop(latest <= 50)
 		}
 	}
 	const navLinks = ['CONNECT', 'CIRCULAR', 'CARE', 'LEASING']

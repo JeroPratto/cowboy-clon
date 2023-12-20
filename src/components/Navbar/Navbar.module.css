@@ -20,6 +20,7 @@
 .logoContainer {
 	height: 25px;
 	color: var(--nav-text-color);
+	z-index: 10;
 }
 .logoContainer svg {
 	height: 100%;
@@ -29,8 +30,11 @@
 .listContainer {
 	position: absolute;
 	display: flex;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 0;
+	right: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
 }
 .itemList {
 	padding: 0 calc(var(--nav-gap) * 0.5);
@@ -51,6 +55,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	gap: var(--nav-gap);
+	z-index: 10;
 }
 .orderNow {
 	color: var(--order-now-text-color);
